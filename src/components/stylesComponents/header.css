@@ -1,0 +1,215 @@
+:root {
+    --main-blue-color: #00bde3;
+    --main-dark-gray-color: #0f0f0f;
+    --main-white-color: #f9f9f9;
+  }
+
+#backToTop{
+    position: fixed;
+    z-index: 100;
+    background-color: #00bde3;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: -50px;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    margin: 0 auto;
+    opacity: 0.1;
+    transition: all .5s;
+    box-shadow: 3px 0px 34px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 0px 34px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 0px 34px 3px rgba(0,0,0,0.75);
+}
+
+#backToTop img{
+    width: 20px;
+    height: 20px;
+}
+
+#backToTop:hover{
+    opacity: 1;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    position: absolute;
+    z-index: 100;
+}
+
+.caixa_menu{
+    background-color: transparent;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75vw;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--main-white-color);
+    font-size: 40px;
+    font-weight: 900;
+    justify-self: center;
+    cursor: pointer;
+    
+}
+
+.oneList button, .twoList button {
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    color: var(--main-white-color);
+    font-size: 1.0rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.oneList button:hover::after, .twoList button:hover::after {
+    content: ''; 
+    display: block; 
+    position: absolute; 
+    width: 2%; 
+    height: 2px; 
+    bottom: 10; 
+    background-color: var(--main-white-color); 
+    
+  }
+
+.oneList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.twoList{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    width: 300px;
+} 
+
+#menuMobile_icone{
+    position: relative;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#menuMobile_icone div{
+    width: 80%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--main-blue-color);
+}
+
+#quartoAndarLogo-Menu{
+    position: relative;
+    display: none;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--main-blue-color);
+    margin-right: 1px;
+    
+}
+
+#quartoAndarLogo-Menu span{
+    font-size: 25px;
+    color: var(--main-blue-color);
+    font-family: var(--main-font-family);
+    font-weight: 800;
+}
+
+.menuMobile{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+    top: 80px;
+    transition: .6s all;
+    margin-left: 100vw;
+    z-index: 100;
+}
+
+.menuMobile button{
+    height: 70px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    background-color: var(--main-white-color);
+    border-bottom: 1px solid  #a1a1a1cc;
+    font-weight: 500;
+    font-size: 19px;
+}
+.menuMobile button:nth-child(1){
+    border-top: 1px solid  #a1a1a1cc;
+}
+.menuMobile button:nth-child(5){
+    border-bottom: none;
+}
+
+@media screen and (max-width:1280px){
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header{
+        position: fixed;
+    }
+    #menuMobile_icone{
+        display: flex;
+    }
+    #quartoAndarLogo-Menu{
+        display: flex;
+        position: relative;
+    }
+    #backToTop{
+        display: none;
+    }
+    .header{
+        background-color: var(--main-white-color);
+        justify-content: space-between;
+    }
+    .menuMobile button {
+        width: 100%;
+    }
+}
+

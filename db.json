@@ -1,0 +1,32 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "João Miguel",
+      "email": "joao.msantos@al.infnet.edu.br",
+      "numero": "6515166262626",
+      "desc": "descrição genérica"
+    },
+    {
+      "id": 2,
+      "nome": "Lucas",
+      "email": "lucas@gmail",
+      "numero": "62611129691",
+      "desc": "descrição genérica"
+    },
+    {
+      "id": 3,
+      "nome": "Pedro",
+      "email": "lucas@gmail",
+      "numero": "62611129691",
+      "desc": "descrição genérica"
+    },
+    {
+      "id": 4,
+      "nome": "Joaquim",
+      "email": "algumemail@gmail.com",
+      "numero": "2498111513645",
+      "desc": "Alguma descrição"
+    }
+  ]
+}

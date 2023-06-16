@@ -1,0 +1,193 @@
+:root {
+    --main-blue-color: #00bde3;
+    --main-white-color: #f9f9f9;
+    --dark-gray-blue-color: #131e25;
+    --main-font-family: Arial, Helvetica, sans-serif;
+  }
+
+.div-form{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 99px;
+    background-image: linear-gradient(to bottom, #131e25, #1f4151, #256780, #2191b1, #00bde3);
+}
+
+.boxForm{
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 76vw;
+    height: 80vh;
+    background-color: black;
+    transition: .4s all;
+}
+
+.boxForm:hover{
+    border: 3px solid #00bde3;
+    box-shadow: 3px 0px 34px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 0px 34px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 0px 34px 3px rgba(0,0,0,0.75);
+    transform: scale(1.03);
+}
+
+.boxForm-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.boxForm-img h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: var(--main-white-color);
+}
+
+.boxForm-img img{
+    width: 500px;
+    height: 500px;
+}
+
+.boxForm-Form{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-blue-color);
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boxForm-Form form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+}
+
+.boxForm-Form form input, textarea{
+    color: black; /* caso embaixo esteja usando a cor (--dark-gray-blue-color), use a cor var(--main-whaite-color) no color do input*/
+    background-color: var(--main-white-color); /* ou pode usar var(--dark-gray-blue-color)*/
+    border: 3px solid #00bde3;
+    border-radius: 10px;
+    margin: 15px 0;
+    height: 50px;
+    width: 20vw;
+    padding: 10px;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.boxForm-Form form textarea{
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxForm-Form form span{
+    color: var(--main-white-color);
+    align-self: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxForm-Form form button{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-white-color);
+    border: 3px solid var(--main-white-color);
+    color: var(--dark-gray-blue-color);
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.boxForm-Form form button:hover{
+    background-color: transparent;
+    color: var(--main-white-color);
+}
+
+.boxForm-Form form button:active{
+    background-color: #2092bb;
+}
+
+@media screen and (max-width:1000px){
+    .boxForm{
+        height: auto;
+    }
+    .boxForm-img{
+        width: 50%;
+    }
+    .boxForm-img img{
+        width: 50%;
+        height: 50%;
+    }
+    .boxForm-Form form{
+        width: 100%;
+    }
+    .boxForm-Form form input, textarea{
+        width: 90%;
+    }
+    .boxForm-Form form span{
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    .boxForm-Form form button{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .div-form{
+        padding:0;
+        height: auto;
+    }
+    .boxForm{
+        width: 100%;
+        flex-direction: column;
+        box-shadow: 3px 0px 34px 3px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 3px 0px 34px 3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 0px 34px 3px rgba(0,0,0,0.75);
+        height: auto;
+    }
+    .boxForm:hover{
+        border: none;
+        transform: scale(1);
+    }
+    .boxForm-img{
+        width: 100%;
+    }
+    .boxForm-img img{
+        width: 100px;
+        height: 100px;
+    }
+    .boxForm-img h3{
+        font-size: 19px;
+        padding: 10px;
+    }
+    .boxForm-Form{
+        width: 100%;
+        height: auto;
+    }
+    .boxForm-Form form{
+        width: 90%;
+        padding: 15px;
+    }
+    .boxForm-Form form input, textarea{
+        width: 100%;
+    }
+    .boxForm-Form form span{
+        font-size: 18px;
+    }
+    .boxForm-Form h4{
+        display: none;
+    }
+}

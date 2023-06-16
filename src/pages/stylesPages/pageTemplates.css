@@ -1,0 +1,328 @@
+.PageTemplates{
+    display: flex;
+    flex-direction: column;
+    
+    height: 380vh;
+    background-image: linear-gradient(to bottom, #131e25, #1f4151, #256780, #2191b1, #00bde3);
+}
+.header_Page--template {
+    height: 10vh;
+}
+.templates{
+    
+    height: 190vh;
+}
+.header_template
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 75vw;
+    height: 12vh;
+
+}
+
+.header_template button{
+    width: 130px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--main-blue-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.header_template button:hover{
+    color: var(--main-white-color);
+    transform: scale(1.1);
+}
+.templates_container{
+    margin: 0 auto;
+    width: 75vw;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.card_template{
+    border: 2px solid #ccc;
+  border-radius: 5px;
+    background-color: hsla(190, 99%, 36%, 0.76);
+    margin-top: 70px;
+    width: 47%;
+    height: 380px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card_template img {
+    width: 100%;
+    height: 378px;
+    border: 1px solid #ccc;
+  border-radius: 5px;
+    
+}
+.card_template:hover img{
+    cursor: pointer;
+    opacity: 0.7;
+    background-color: #1f4151;
+    
+}
+.exibir-CARD{
+    text-transform: capitalize;
+    padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: hsl(199, 83%, 41%);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+.content {
+    text-transform: capitalize;
+    padding-top: 20px;
+    opacity: 0;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+  }
+.card_template:hover  .content {
+    opacity: 0.9;
+
+}
+.exibir-CARD:hover{
+    background-color: #b6b3b3;
+    color:white;
+}
+.card-title_template{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+  margin-bottom: 16px;
+  color: white;
+}
+.modal-overlay{
+    border-radius: 40px;
+    width: 70vw;
+    margin:230px auto;
+    height: 600px;
+    
+    background-color: #00bde3;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    
+    animation: fadeIn 2.6s ease;
+    
+}
+.modal-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    max-width: 1600px;
+   
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.explicativo{
+    color: rgb(240, 238, 234);
+    background-color: #131e25;
+    width: 40%;
+    height:600px ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.explicativo button{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--main-blue-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: 8px;
+    
+}
+.explicativo h2{
+    text-transform: capitalize;
+}
+.explicativo--image{
+    
+    width: 60%;
+    height:600px ;
+}
+#close{position: absolute;
+    z-index: 100;
+    height: 50px;
+    width:  1px;
+    background-color: transparent;
+    
+}
+.explicativo--image img{
+    border-radius:  0px 40px  40px 0px;
+width: 100%;
+height:600px ;
+}
+@media screen and (max-width:1400px){
+    .modal-overlay{
+        margin:100px auto;}
+        .PageTemplates{
+            height: 440vh;
+        }
+}
+@media screen and (max-width:1150px){
+    .modal-overlay{
+        margin:30px auto;}
+        .PageTemplates{
+            height: 520vh;
+        }
+        .explicativo p {
+            font-size: 14px;
+        }
+
+    }
+    @media screen and (max-width:900px){
+        .templates_container{
+            flex-direction: column;
+        }
+        .card_template{
+            width: 100%;
+        }
+        .PageTemplates{
+            height: 630vh;
+        }
+        .modal-overlay{
+            height: 700px;
+            width: 80vw;
+            margin:200px auto;}
+.explicativo{
+    height: 700px;
+}
+.explicativo--image{
+    height: 700px;
+}
+.explicativo--image img{
+    height: 700px;
+}
+}
+@media screen and (max-width:850px){
+    .PageTemplates{
+        height: 610vh;
+    }
+}
+@media screen and (max-width:800px){
+    .PageTemplates{
+        height: 550vh;
+    }
+}
+@media screen and (max-width:770px){
+    .PageTemplates{
+        height: 720vh;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .PageTemplates {
+      height: 800vh;
+    }
+  
+    .templates_container {
+        
+      flex-direction: column;
+    }
+  .header_template{
+    margin-bottom: 60px;
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+  }
+  .card_template{
+    width: 100%;
+  }
+  
+    .modal-overlay {
+      height: 300px;
+      width: 100%;
+      margin: 200px auto;
+    }
+  
+    .explicativo {
+        margin-top: 50px;
+      justify-content: space-around;
+      height: 200px;
+     
+      background-color: transparent;
+      color: black;
+    }
+    .explicativo button {
+        color: black;
+    }
+    .explicativo p {
+        display: none;
+    }
+  
+    .explicativo--image {
+     display: flex;
+     height: 300px;
+     width: 250px;
+    }
+    .explicativo--image img {
+        height: 300px;
+    }
+  
+  }
+  @media screen and (max-width: 390px){
+    .PageTemplates {
+        height: 860vh;
+      }
+  }
+  @media screen and (max-width: 380px){
+    .PageTemplates {
+        height: 930vh;
+      }
+  }
+ 
+  @media screen and (max-width: 330px){
+    .PageTemplates {
+        height: 1270vh;
+      }
+      .header_template{
+        margin-bottom: 120px;
+        margin-top: 150px;
+        text-align: center;
+        width: 100%;
+      }
+    }

@@ -1,0 +1,101 @@
+:root {
+    --main-blue-color: #00bde3;
+    --main-dark-gray-color: #0f0f0f;
+    --main-white-color: #f9f9f9;
+    --main-font-family: Arial, Helvetica, sans-serif;
+  }
+
+.window {
+    width: 370px;
+    height: 320px;
+    background-color: var(--main-blue-color);
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 17px;
+  }
+
+  .window .text-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 15px;
+  }
+
+  .window .text-content h3{
+    align-self: start;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: var(--main-white-color);
+  }
+
+  .window .text-content p{
+    font-family: var(--main-font-family);
+    color: var(--main-dark-gray-color);
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.3rem;
+    font-weight: 500;
+  }
+
+  .window .text-content img{
+    align-self: flex-end;
+    width: 100px;
+    border-radius: 15px;
+  }
+  
+  .glass {
+    width: 370px;
+    height: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 3px solid #fff;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    transition: all .5s;
+  }
+
+  .holder{
+    width: 40px;
+    height: 80px;
+    background-color: #000;
+    border-radius: 8px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .window:hover .glass{
+    width: 45px;
+  }
+  
+  @media screen and (max-width:900px){
+    .window{
+      margin: 10px 0;
+    }
+}
+
+@media screen and (max-width:450px){
+  .window{
+    transform: scale(0.8);
+    margin: -10px;
+  }
+}
+  
+  

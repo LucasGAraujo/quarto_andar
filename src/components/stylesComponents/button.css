@@ -1,0 +1,27 @@
+:root {
+    --main-blue-color: #00bde3;
+    --main-dark-gray-color: #0f0f0f;
+    --main-white-color: #f9f9f9;
+    --main-font-family: 'Chakra Petch', sans-serif;
+    --h3-font-family: 'Lato';
+    --p-font-family: 'Proxima Nova';
+}
+
+.sectionTextLandingPage button{
+    /* width: 310px;
+    height: 60px; */
+    background-color: transparent;
+    border: 2px solid var(--main-blue-color);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--main-white-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.sectionTextLandingPage button:hover{
+    color: var(--main-blue-color);
+    transform: scale(1.1);
+}
